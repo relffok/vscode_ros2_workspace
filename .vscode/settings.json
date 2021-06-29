@@ -66,6 +66,7 @@
         "**/.git/objects/**",
         ".vscode",
         ".vscode-insiders",
-        ".devcontainer/devcontainer.json"
+        ".devcontainer/devcontainer.json",
+        "**/compile_commands.json"
     ]
 }
