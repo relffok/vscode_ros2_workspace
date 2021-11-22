@@ -1,0 +1,3 @@
+# List pkgs (opt. incl. versions) rosdep cannot handle
+# i.e. 
+# numpy>=1.20
