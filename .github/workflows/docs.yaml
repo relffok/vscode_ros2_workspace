@@ -1,9 +1,10 @@
 name: docs
 
 on:
+  release:
   push:
-    branches:
-      - "galactic"
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 jobs:
@@ -14,6 +15,3 @@ jobs:
         uses: actions/checkout@v3
       - name: Build and push docs
         uses: athackst/mkdocs-simple-plugin@v1.1.1
-        with:
-          publish_branch: gh-pages-galactic
-          edit_uri: edit/galactic
